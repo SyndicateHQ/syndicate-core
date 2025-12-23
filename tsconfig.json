@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"jsx": "preserve",
+		"jsxImportSource": "vue",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"resources/js/*"
+			]
+		},
+		"strict": true,
+		"skipLibCheck": true
+	},
+	"include": [
+		"resources/js/**/*.ts",
+		"resources/js/**/*.d.ts",
+		"resources/js/**/*.vue"
+	]
+}
