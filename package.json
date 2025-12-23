@@ -6,6 +6,7 @@
         "build": "vite build && vite build --ssr",
         "dev": "vite",
         "migrate": "php artisan migrate",
+        "gen:migration": "php artisan make:migration",
         "unsafe:seed": "php artisan migrate:fresh --seed",
         "gen:types": "php artisan typescript:transform"
     },
