@@ -2,7 +2,7 @@
 import { useForm, Link } from '@inertiajs/vue3';
 
 const form = useForm({
-	name: '',
+	username: '',
 	email: '',
 	password: '',
 	password_confirmation: ''
@@ -20,9 +20,9 @@ const submit = () => {
 
 	<form @submit.prevent="submit">
 		<div>
-			<label for="name">Full Name</label>
-			<input v-model="form.name" type="text" id="name" required />
-			<p v-if="form.errors.name" class="error">{{ form.errors.name }}</p>
+			<label for="name">Username</label>
+			<input v-model="form.username" type="text" id="name" required />
+			<p v-if="form.errors.username" class="error">{{ form.errors.username }}</p>
 		</div>
 		<div>
 			<label for="email">Email Address</label>

@@ -19,7 +19,7 @@ class UserFactory extends Factory
 	{
 		return [
 			'email' => fake()->email(),
-			'name' => fake()->name(),
+			'username' => fake()->userName(),
 			'password' => Hash::driver('argon2id')->make(fake()->password()),
 		];
 	}

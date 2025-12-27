@@ -1,11 +1,20 @@
 @use 'base/reset';
 
+@use 'components/header';
+@use 'components/button';
+
+@use 'layouts/default';
+
 $primary-color: #4f46e5;
 
 body {
 	background-color: #f3f4f6;
 	color: $primary-color;
 }
+
+h1 {
+	font-size: 26px;
+};
 
 .text-error {
 	color: red;

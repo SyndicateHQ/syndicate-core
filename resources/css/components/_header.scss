@@ -1,0 +1,24 @@
+header {
+	width: 100%;
+	background-color: black;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+
+	.header-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		width: 90%;
+		padding: 1rem;
+
+		.header-buttons {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+		}
+	}
+}

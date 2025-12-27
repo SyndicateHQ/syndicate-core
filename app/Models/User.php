@@ -17,7 +17,7 @@ class User extends Authenticatable
 	protected $keyType = 'string';
 
 	protected $fillable = [
-		'name',
+		'username',
 		'email',
 		'password'
 	];
@@ -26,4 +26,14 @@ class User extends Authenticatable
 		'password',
 		'remember_token'
 	];
+
+	public function profile() {
+		return $this->hasOne(Profile::class);
+	}
+
+	protected static function booted() {
+		static::created(function ($user) {
+			$user->profile()->create();
+		});
+	}
 }
